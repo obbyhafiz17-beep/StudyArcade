@@ -1,0 +1,3 @@
+import Link from "next/link";
+import { ArrowLeft, Compass } from "lucide-react";
+export default function NotFound(){return <main className="app-shell" style={{minHeight:"100vh",display:"grid",placeItems:"center",padding:24}}><section className="panel" style={{maxWidth:480,textAlign:"center",padding:35}}><Compass size={40} color="#a78bfa" style={{margin:"0 auto 16px"}}/><div className="eyebrow">404 · HALAMAN TIDAK DITEMUKAN</div><h1 style={{fontSize:30,margin:"12px 0"}}>Sepertinya kamu tersesat</h1><p className="muted" style={{fontSize:13,lineHeight:1.7}}>Halaman yang kamu cari belum ada atau sudah dipindahkan.</p><Link href="/" className="btn-primary" style={{marginTop:12}}><ArrowLeft size={15}/> Kembali ke dashboard</Link></section></main>}
